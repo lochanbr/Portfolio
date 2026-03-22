@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-heading font-extrabold text-white mb-6 tracking-tight leading-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-heading font-extrabold text-white mb-6 tracking-tight leading-tight gradient-text hover-lift"
         >
           {PERSONAL_DETAILS.name}
         </motion.h1>
@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
         >
           <a 
             href="#projects"
-            className="group relative px-8 py-4 bg-neon-blue/10 text-neon-blue border border-neon-blue/50 rounded-lg overflow-hidden font-semibold transition-all hover:bg-neon-blue hover:text-slate-900 hover:shadow-[0_0_20px_rgba(0,243,255,0.4)] flex items-center justify-center gap-2"
+            className="group relative px-8 py-4 bg-neon-blue/10 text-neon-blue border border-neon-blue/50 rounded-lg overflow-hidden font-semibold transition-all hover:bg-neon-blue hover:text-slate-900 hover:shadow-[0_0_20px_rgba(0,243,255,0.4)] flex items-center justify-center gap-2 hover-lift neon-border"
           >
             <span>View Projects</span>
             <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -64,7 +64,7 @@ export const Hero: React.FC = () => {
           
           <a 
             href="#contact"
-            className="group px-8 py-4 bg-slate-800 text-white rounded-lg font-semibold hover:bg-slate-700 transition-colors flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-600"
+            className="group px-8 py-4 glass text-white rounded-lg font-semibold hover:bg-slate-700/50 transition-all flex items-center justify-center gap-2 border border-slate-700/50 hover:border-neon-purple/50 hover-lift"
           >
             <span>Contact Me</span>
             <Mail className="w-5 h-5 group-hover:text-neon-purple transition-colors" />
@@ -73,7 +73,7 @@ export const Hero: React.FC = () => {
           <a 
             href="/resume.pdf" 
             download
-            className="group px-8 py-4 bg-transparent text-slate-300 rounded-lg font-semibold hover:text-white hover:bg-slate-800 transition-colors flex items-center justify-center gap-2 border border-slate-700 hover:border-slate-600"
+            className="group px-8 py-4 glass text-slate-300 rounded-lg font-semibold hover:text-white hover:bg-slate-800/50 transition-all flex items-center justify-center gap-2 border border-slate-700/50 hover:border-neon-green/50 hover-lift"
           >
             <span>Download CV</span>
             <Download className="w-5 h-5 group-hover:text-neon-green transition-colors" />

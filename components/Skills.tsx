@@ -53,11 +53,11 @@ export const Skills: React.FC = () => {
             whileHover={{ scale: 1.05 }}
             className="relative group cursor-pointer w-28 h-28 md:w-32 md:h-32"
           >
-            {/* Gradient Glow Background */}
-            <div className="absolute -inset-0.5 group-hover:-inset-1 bg-gradient-to-r from-neon-blue to-neon-purple rounded-2xl blur opacity-20 group-hover:opacity-75 transition-all duration-300"></div>
+            {/* Enhanced Gradient Glow Background */}
+            <div className="absolute -inset-0.5 group-hover:-inset-1 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink rounded-2xl blur opacity-20 group-hover:opacity-75 transition-all duration-300 animate-gradient-x"></div>
             
             {/* Content Container */}
-            <div className="relative h-full w-full flex items-center justify-center bg-slate-900 rounded-2xl border border-slate-800 group-hover:border-neon-blue/30 transition-colors duration-300 text-slate-400">
+            <div className="relative h-full w-full flex items-center justify-center glass rounded-2xl border border-slate-800/50 group-hover:border-neon-blue/30 transition-all duration-300 text-slate-400 hover-lift">
                {getSkillIcon(skill.name)}
             </div>
           </motion.div>
@@ -78,10 +78,10 @@ export const Skills: React.FC = () => {
             <div className="fixed inset-0 z-[101] flex items-center justify-center p-4 pointer-events-none">
               <motion.div
                 layoutId={`skill-card-${selectedSkill.name}`}
-                className="w-full max-w-lg bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden pointer-events-auto relative"
+                className="w-full max-w-lg glass border border-slate-700/50 rounded-2xl shadow-2xl overflow-hidden pointer-events-auto relative hover-lift"
               >
-                 {/* Modal Header Decoration */}
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-neon-blue to-neon-purple" />
+                 {/* Enhanced Modal Header Decoration */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-pink animate-gradient-x" />
                 
                 <button 
                   onClick={() => setSelectedSkill(null)}
@@ -96,7 +96,7 @@ export const Skills: React.FC = () => {
                       {/* Use the same icon in modal header, slightly smaller/different if needed, or keeping consistent */}
                       {getSkillIcon(selectedSkill.name)}
                     </div>
-                    <h3 className="text-3xl font-heading font-bold text-white drop-shadow-[0_0_10px_rgba(0,243,255,0.3)]">
+                    <h3 className="text-3xl font-heading font-bold text-white text-glow-blue drop-shadow-[0_0_10px_rgba(0,243,255,0.3)]">
                       {selectedSkill.name}
                     </h3>
                   </div>

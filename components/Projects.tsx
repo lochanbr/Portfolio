@@ -33,9 +33,9 @@ export const Projects: React.FC = () => {
                </div>
             </div>
 
-            <div className="absolute -inset-[1px] bg-gradient-to-r from-neon-purple/50 to-neon-blue/50 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-500" />
+            <div className="absolute -inset-[1px] bg-gradient-to-r from-neon-purple/50 via-neon-blue/50 to-neon-pink/50 rounded-2xl opacity-0 group-hover:opacity-100 blur transition duration-500 animate-gradient-x" />
             
-            <div className="relative h-full bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-10 transition-transform duration-300 group-hover:-translate-y-2 flex flex-col z-10">
+            <div className="relative h-full glass border border-slate-800/50 rounded-2xl p-8 md:p-10 transition-all duration-300 group-hover:-translate-y-2 group-hover:border-neon-blue/30 flex flex-col z-10 hover-lift">
               <div className="flex items-start justify-between mb-6">
                 <div className="p-3 bg-slate-800 rounded-xl group-hover:bg-slate-700 transition-colors">
                   <Code className="w-6 h-6 text-neon-blue" />
@@ -43,7 +43,7 @@ export const Projects: React.FC = () => {
                 <ExternalLink className="w-5 h-5 text-slate-500 group-hover:text-white transition-colors" />
               </div>
               
-              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-neon-blue transition-colors">
+              <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-glow-blue transition-all duration-300">
                 {project.title}
               </h3>
               

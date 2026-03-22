@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
       <nav 
         className={`fixed top-0 left-0 right-0 z-[50] transition-all duration-300 ${
           scrolled || isOpen 
-            ? 'bg-slate-950/80 backdrop-blur-md border-b border-slate-800/50 shadow-lg shadow-neon-blue/5' 
+            ? 'glass border-b border-slate-800/50 shadow-lg shadow-neon-blue/10' 
             : 'bg-transparent py-4'
         }`}
       >
@@ -37,7 +37,7 @@ export const Navbar: React.FC = () => {
             {/* Logo */}
             <a 
               href="#" 
-              className="text-xl font-bold font-heading tracking-wider text-white hover:text-neon-blue transition-colors group"
+              className="text-xl font-bold font-heading tracking-wider gradient-text hover:scale-105 transition-all duration-300"
             >
               LOCHAN<span className="text-neon-blue group-hover:text-neon-purple transition-colors">.</span>DEV
             </a>
@@ -48,10 +48,10 @@ export const Navbar: React.FC = () => {
                 <a 
                   key={link.name} 
                   href={link.href} 
-                  className="text-sm font-medium text-slate-300 hover:text-neon-blue transition-colors relative group"
+                  className="text-sm font-medium text-slate-300 hover:text-glow-blue transition-all duration-300 relative group"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-neon-blue transition-all duration-300 group-hover:w-full opacity-80"></span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-neon-blue to-neon-purple transition-all duration-300 group-hover:w-full opacity-80 animate-gradient-x"></span>
                 </a>
               ))}
             </div>

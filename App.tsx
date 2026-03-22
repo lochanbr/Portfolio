@@ -45,18 +45,24 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200 font-sans selection:bg-neon-blue selection:text-slate-900 overflow-x-hidden">
+      {/* Floating Orbs */}
+      <div className="floating-orb orb-1"></div>
+      <div className="floating-orb orb-2"></div>
+      <div className="floating-orb orb-3"></div>
+
       {/* Scroll Progress Bar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-green origin-left z-[100]"
+        className="fixed top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-neon-blue via-neon-purple to-neon-green origin-left z-[100] pulse-glow"
         style={{ scaleX }}
       />
       
       <Navbar />
 
-      {/* Background Gradient Effects */}
+      {/* Enhanced Background Gradient Effects */}
       <div className="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-neon-purple/20 rounded-full blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-neon-blue/20 rounded-full blur-[120px]" />
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-neon-purple/20 rounded-full blur-[120px] animate-pulse-slow" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-neon-blue/20 rounded-full blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-[50%] left-[50%] w-[30%] h-[30%] bg-neon-green/15 rounded-full blur-[100px] animate-pulse-slow" style={{ animationDelay: '4s' }} />
       </div>
 
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
