@@ -56,6 +56,24 @@ export const PROJECTS_DATA: Project[] = [
     description: "An interactive educational tool designed to visualize how various algorithms work in real-time to aid learning.",
     link: "https://github.com/lochanbr/Algovis-interactive-algorithm-visualizer",
     tags: ["Web", "Algorithms", "Interactive"]
+  },
+  {
+    title: "NEWS FEED APPLICATION",
+    description: "A dynamic news feed application that aggregates and displays news content with modern UI and real-time updates.",
+    link: "https://github.com/lochanbr/newsfeed",
+    tags: ["Web", "News", "React"]
+  },
+  {
+    title: "AI TRAVEL AGENCY",
+    description: "An intelligent travel agency platform powered by AI to provide personalized travel recommendations and booking assistance.",
+    link: "https://github.com/lochanbr/ai-travel-agency",
+    tags: ["AI", "Travel", "Web"]
+  },
+  {
+    title: "LADY BUDDY - WOMEN SAFETY APP",
+    description: "A comprehensive women safety application with emergency features, location tracking, and safety alerts to ensure women's security and peace of mind.",
+    link: "https://github.com/lochanbr/LadyBuddy-A-woman-safety-app",
+    tags: ["Safety", "Mobile", "Emergency"]
   }
 ];
 
