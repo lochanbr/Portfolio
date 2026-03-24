@@ -74,6 +74,12 @@ export const PROJECTS_DATA: Project[] = [
     description: "A comprehensive women safety application with emergency features, location tracking, and safety alerts to ensure women's security and peace of mind.",
     link: "https://github.com/lochanbr/LadyBuddy-A-woman-safety-app",
     tags: ["Safety", "Mobile", "Emergency"]
+  },
+  {
+    title: "STUDENT DASHBOARD",
+    description: "A comprehensive student management dashboard for tracking academic progress, assignments, grades, and course information in an intuitive interface.",
+    link: "https://github.com/lochanbr/student-dashboard",
+    tags: ["Web", "Dashboard", "Education"]
   }
 ];
 
