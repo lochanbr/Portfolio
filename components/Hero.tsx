@@ -1,7 +1,7 @@
 import React from 'react';
 import { PERSONAL_DETAILS } from '../constants';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Download } from 'lucide-react';
+import { ArrowRight, Mail } from 'lucide-react';
 import { TypeAnimation } from 'react-type-animation';
 
 export const Hero: React.FC = () => {
@@ -68,15 +68,6 @@ export const Hero: React.FC = () => {
           >
             <span>Contact Me</span>
             <Mail className="w-5 h-5 group-hover:text-neon-purple transition-colors" />
-          </a>
-
-          <a 
-            href="/resume.pdf" 
-            download
-            className="group px-8 py-4 glass text-slate-300 rounded-lg font-semibold hover:text-white hover:bg-slate-800/50 transition-all flex items-center justify-center gap-2 border border-slate-700/50 hover:border-neon-green/50 hover-lift"
-          >
-            <span>Download CV</span>
-            <Download className="w-5 h-5 group-hover:text-neon-green transition-colors" />
           </a>
         </motion.div>
       </div>
